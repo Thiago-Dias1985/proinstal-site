@@ -269,45 +269,71 @@ li {
   height: 28px;
 }
 
-/* ===== MOBILE FIX REAL ===== */
-@media (max-width: 768px) {
+/* ================= MOBILE LAYOUT PROFISSIONAL ================= */
+@media (max-width: 700px) {
+
+  body {
+    overflow-x: hidden;
+  }
 
   .header {
-    height: 280px;
+    height: 240px;
   }
 
   .logo {
-    height: 180px;
+    height: 150px;
+    padding: 12px;
   }
 
   .menu-principal {
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .menu-principal a {
+    font-size: 14px;
   }
 
   .layout {
     grid-template-columns: 1fr;
-    padding: 25px 15px;
+    padding: 20px 12px;
+    gap: 20px;
+  }
+
+  .content section {
+    padding: 18px;
+    margin-bottom: 20px;
   }
 
   .sidebar {
+    order: -1;
     max-height: none;
-    margin-top: 20px;
+    padding: 18px;
   }
 
-  h1 { font-size: 26px; }
-  h2 { font-size: 22px; }
-  h3 { font-size: 20px; }
-  h4 { font-size: 18px; }
-  p, li { font-size: 15px; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 20px; }
+  h3 { font-size: 18px; }
+  h4 { font-size: 16px; }
+
+  p, li {
+    font-size: 14px;
+  }
 
   .footer-container {
     flex-direction: column;
     text-align: center;
-    gap: 12px;
+    gap: 10px;
   }
 
   .footer-logo img {
-    height: 90px;
+    height: 80px;
+  }
+
+  iframe, video {
+    max-width: 100%;
+    height: auto;
   }
 }
+
